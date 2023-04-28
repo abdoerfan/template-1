@@ -1,0 +1,535 @@
+
+.header{
+    padding: 20px;
+    position: relative; 
+    background-color: #010c16;
+    position: sticky;top: 0;
+  height: 15px;
+
+}
+
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header .earth{
+font-size: 25px;
+color: #6fd6ff;
+
+}
+.header .home{
+    height: 28px;
+    width: 110px;
+    background-color:  #6fd6ff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgb(1, 11, 2);
+    text-align: center;
+}
+.header .abdo{
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #150356;
+    text-decoration: none;
+    
+}
+.header .home:hover{
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {}
+  .container {
+    width: 1170px;
+  }
+    .img{
+        height: 6%;
+        width: 6%;
+    }
+    .header .links .icon{
+width: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+position: relative;
+    }
+    .header .links .icon span{
+       background-color: #6fd6ff;
+       margin-bottom: 5px;
+    }
+    .header .links .icon span:first-child {
+        width: 100%;
+        height: 3px;
+
+    }
+    .header .links .icon span:nth-child(2){
+        width: 60%;
+        height: 3px;
+        transition: 0.3s;
+
+    }
+    .header .links .icon span:nth-child(3) {
+        width: 100%;
+        height: 3px;
+    }
+    .header .links:hover .icon span:nth-child(2){
+        width: 100%;
+    }
+  
+    .header .links ul{
+        border-top-left-radius : 15PX;
+        list-style: none;
+padding: 0;
+margin: 0;
+background-color: #dcdcdc;
+position: absolute;right: 183px; top: 55px;
+width: 180px;
+display: none;
+
+    }
+    .header .links ul::before{
+        content:"" ;
+        border: 10px solid ;
+        border-color: transparent transparent #dcdcdc transparent;
+        position: absolute;
+right: 0;
+top: -19px;
+    }
+    .header .links ul a{
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        color: #14044d;
+        transition: 0.3s;
+    }
+    .header .links ul a:hover{
+        padding-left: 25px;
+    }
+   
+    .header .links:hover ul{
+        display: block;
+
+    }
+.header .links ul li:not(:first-child) a{
+    border: 1px solid #cccccc;
+}
+
+
+.photo{
+    background-image: url(../earth-from-space.jpg);
+    background-size: cover;
+    height:calc(100vh - 90px);
+    
+    
+}
+.text{
+    margin: 0px;
+    position: absolute;left: 50%;top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 100%;
+    width: 320px;
+
+}
+.text h1{
+    font-weight: bold;
+    font-size: 60px;
+    color: #14005e;
+
+}
+.text p{
+
+    font-size: 21px;
+    line-height: 1.6;
+color:#010039;
+letter-spacing: 1px;
+
+}
+.a p{
+color: aquamarine;
+font-size: 50px;
+text-align: center;
+}
+.container2{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.feat{
+    text-align: center;
+    line-height: 1.9;
+    width: 400px;
+
+}
+.magic{
+    font-size: 40px;
+    color:#00a9ec;
+}
+.feat p{
+    font-size: 17px;
+    color:  #150356;
+}
+::selection{
+    background-color: rgb(9, 135, 198);
+    color: rgb(235, 239, 3);
+}
+.z{
+    text-align: center;
+    font-size: 20px;
+}
+.services{
+   margin-top: -30px;
+    margin-bottom: 30px;
+}
+.services h2{
+    text-align: center;
+   margin: 0;
+   padding: 0;
+    font-size: 100px;
+    color: #70d7ff;
+    letter-spacing:2px;
+    text-shadow: 3px 0 3px rgb(130, 130, 130);
+}
+.services .p{
+    text-align: center;
+    font-size: 17px;
+    margin-top: -25px;
+    color:  #150356;
+}
+.services .services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 60px;
+    margin-top: 100px;
+    margin-left: 180px;
+ }
+ .services .services-content h3{
+    font-size: 20px;
+ }
+.services .services-content .srv{
+    margin-bottom: 80px;
+}
+.services-img{
+    border-radius: 10px;
+    
+}
+.services-content .services-icon{
+    font-size: 40px;
+    color: #00a9ec;
+}
+.services-content .col .srv h3{
+    color: #14044d;
+}
+.hr{
+    color: #00a9ec;
+    height: 10px;
+    background-color: #00a9ec;
+}
+.portfolio{
+    margin-top: -30px;
+}
+.portfolio-header{
+    margin-top:40px;
+}
+.portfolio-header h2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+     font-size: 100px;
+     color: #70d7ff;
+     letter-spacing:2px;
+     text-shadow: 3px 0 3px rgb(130, 130, 130);
+
+}
+.portfolio-header p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: -25px;
+    color:  #150356;
+}
+.container-portfolio{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content:space-around;
+    padding-top: 40px;
+    
+}
+.portfolio-image{
+    border-radius: 10px;
+}
+.portfolio-image:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+.container-portfolio .a{
+    height: 24px;
+    width: 73px;
+    background-color:  #6fd6ff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+.container-portfolio .a:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+.container-portfolio .a a{
+    text-decoration: none;
+    color: #14044d;
+}
+.container-portfolio .html-link{
+    height: 24px;
+    width: 73px;
+    background-color:  #6fd6ff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+.container-portfolio .html-link a{
+    text-decoration: none;
+    color: #14044d;
+}
+.container-portfolio .html-link:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+
+}
+.port h3{
+    font-size: 23px;
+    color:  #150356;
+}
+.port p{
+    font-size: 17px;
+    color:  #150356;
+}
+.about{
+    margin-top: -30px;
+}
+.about-header h2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+     font-size: 100px;
+     color: #70d7ff;
+     letter-spacing: 3px;
+     text-shadow: 3px 0 3px rgb(130, 130, 130);
+}
+.about-header p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: -25px;
+    color:  #150356;
+}
+.about-container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content:space-around;
+    padding-top: 40px;
+    
+}
+.about-text{
+    width: 700px;
+    line-height: 50px;
+    color: #14044d;
+}
+.hr-2{
+    width: 320px;
+    height: 3px;
+   background-color: #00a9ec;
+   margin-left: 0px;
+   border-radius: 3px;
+}
+.i{
+    border-radius: 50%;
+}
+.about-image{
+    position: relative;
+}
+.about-image::before{
+    content: "";
+    background-color: #00a9ec;
+    width: 40px;
+    position: absolute;right: 0;top: 90px; 
+    height: 290px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius:100px ;
+}
+.about-image::after{
+    content: "";
+    background-color: #00a9ec;
+    width: 40px;
+    position: absolute;left: 0;top: 90px; 
+    height: 290px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius:100px ;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contact h2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+     font-size: 100px;
+     color: #70d7ff;
+     letter-spacing:2px;
+     text-shadow: 3px 0 3px rgb(130, 130, 130);
+}
+.contact .contact-p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: -25px;
+    color:  #ffffff;
+}
+.contact-container{
+   text-align: center;
+   margin-top: 60px;
+   line-height: 20px;
+}
+.contact .p-link{
+    font-size: 30px;
+    color:#ffffff ;
+}
+.contact .gmail-link{
+    text-decoration: none;
+    color:#00a9ec;
+    font-size: 22px;
+}
+.contact .gmail-link-1:hover{
+    transform: scale(1.1);
+    transition: 0.6S;
+}
+.contact .gmail-link:hover{
+    color: red;
+}
+.contact .l{
+    letter-spacing: 20px;
+}
+.contact .icon-3{
+    margin-top: 15px;
+    font-size: 40px;
+}
+.contact .contact-links{
+    font-size: 30px;
+    color: #ffffff;
+}
+.form{
+    text-align: center;
+width: 400px;
+height: 430 px;
+background:rgba(0, 0, 0, .5);
+margin-left: 565px;
+border-radius: 20px;
+line-height: 2.4;
+box-sizing: border-box;
+
+}
+.form .name{
+    height: 25px;
+    width:200px ;
+border-radius: 5px;
+}
+.form .password{
+    height: 25px;
+    width:200px ;
+    border-radius: 5px;
+    
+}
+.form .email{
+    height: 25px;
+    width:200px ;
+    border-radius: 5px;
+}
+.form .submit{
+    width: 80px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 10px;
+}
+.form .submit:hover{
+    background-color: #00a9ec;
+}
+
+.form .name:hover{
+background-color: #e7e4e4;
+}
+.form .password:hover{
+    background-color: #e7e4e4;
+    }
+    .form .email:hover{
+        background-color: #e7e4e4;
+        }
+
+        .form .email:focus{
+            color:#024ba4;
+            font-size: 18px;
+            transition: 0.3s;
+
+           
+            }
+            .form .name:focus{
+                color:#024ba4;
+                font-size: 18px;
+                transition: 0.3s;
+           
+            }.form .password:focus{
+                color:#024ba4;
+                font-size: 18px;
+                transition: 0.3s;
+            }
+            .help a{
+                text-decoration: none;
+                color: #ffffff;
+
+            }
+            .help:hover a{
+                color:#00a9ec;
+            }
+            .f{
+                
+                background-size: cover;
+                
+            }
+            .contact{
+                background-image: url(../Lock-Background-by-ojosujono96.jpg);
+                background-size: cover;
+            }
+            .contact .f label{
+color: rgb(255, 255, 255);
+font-size: 17px;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow:3px 3px 3px #484848;
+            }
+            .contact .form-p{
+font-size: 32px;
+color: rgb(255, 255, 255);
+            }
+            .contact .form-image{
+               position: relative;top: -50px;
+            }
+            .contact .form-content{
+margin-top: -30px;
+            }
